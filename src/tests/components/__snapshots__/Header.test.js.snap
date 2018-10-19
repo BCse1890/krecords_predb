@@ -1,0 +1,263 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render Header 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Header />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h1>
+          Student Record Webpage
+        </h1>,
+        <NavLink
+          activeClassName="is-active"
+          aria-current="page"
+          exact={true}
+          to="/"
+        >
+          Homepage
+        </NavLink>,
+        <NavLink
+          activeClassName="is-active"
+          aria-current="page"
+          to="/add"
+        >
+          Create Record
+        </NavLink>,
+        <NavLink
+          activeClassName="is-active"
+          aria-current="page"
+          to="/edit"
+        >
+          Edit Record
+        </NavLink>,
+        <NavLink
+          activeClassName="is-active"
+          aria-current="page"
+          to="/help"
+        >
+          Help
+        </NavLink>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Student Record Webpage",
+        },
+        "ref": null,
+        "rendered": "Student Record Webpage",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "is-active",
+          "aria-current": "page",
+          "children": "Homepage",
+          "exact": true,
+          "to": "/",
+        },
+        "ref": null,
+        "rendered": "Homepage",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "is-active",
+          "aria-current": "page",
+          "children": "Create Record",
+          "to": "/add",
+        },
+        "ref": null,
+        "rendered": "Create Record",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "is-active",
+          "aria-current": "page",
+          "children": "Edit Record",
+          "to": "/edit",
+        },
+        "ref": null,
+        "rendered": "Edit Record",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "activeClassName": "is-active",
+          "aria-current": "page",
+          "children": "Help",
+          "to": "/help",
+        },
+        "ref": null,
+        "rendered": "Help",
+        "type": [Function],
+      },
+    ],
+    "type": "header",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h1>
+            Student Record Webpage
+          </h1>,
+          <NavLink
+            activeClassName="is-active"
+            aria-current="page"
+            exact={true}
+            to="/"
+          >
+            Homepage
+          </NavLink>,
+          <NavLink
+            activeClassName="is-active"
+            aria-current="page"
+            to="/add"
+          >
+            Create Record
+          </NavLink>,
+          <NavLink
+            activeClassName="is-active"
+            aria-current="page"
+            to="/edit"
+          >
+            Edit Record
+          </NavLink>,
+          <NavLink
+            activeClassName="is-active"
+            aria-current="page"
+            to="/help"
+          >
+            Help
+          </NavLink>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Student Record Webpage",
+          },
+          "ref": null,
+          "rendered": "Student Record Webpage",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "is-active",
+            "aria-current": "page",
+            "children": "Homepage",
+            "exact": true,
+            "to": "/",
+          },
+          "ref": null,
+          "rendered": "Homepage",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "is-active",
+            "aria-current": "page",
+            "children": "Create Record",
+            "to": "/add",
+          },
+          "ref": null,
+          "rendered": "Create Record",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "is-active",
+            "aria-current": "page",
+            "children": "Edit Record",
+            "to": "/edit",
+          },
+          "ref": null,
+          "rendered": "Edit Record",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "activeClassName": "is-active",
+            "aria-current": "page",
+            "children": "Help",
+            "to": "/help",
+          },
+          "ref": null,
+          "rendered": "Help",
+          "type": [Function],
+        },
+      ],
+      "type": "header",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+    "attachTo": undefined,
+    "hydrateIn": undefined,
+  },
+}
+`;

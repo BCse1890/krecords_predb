@@ -1,2983 +1,348 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`should render RecordForm correctly 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <RecordForm />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        "",
-        <form
-          onSubmit={[Function]}
-        >
-          <input
-            autoFocus={true}
-            onChange={[Function]}
-            placeholder="Name"
-            type="text"
-            value=""
-          />
-          <br />
-          <input
-            onChange={[Function]}
-            placeholder="Main Dojo"
-            type="text"
-            value=""
-          />
-          <br />
-          <input
-            input="number"
-            onChange={[Function]}
-            placeholder="Grade Level"
-            value={10}
-          />
-          <br />
-          <withStyles(SingleDatePicker)
-            anchorDirection="left"
-            appendToBody={false}
-            block={false}
-            calendarInfoPosition="bottom"
-            customCloseIcon={null}
-            customInputIcon={null}
-            date={"1970-01-01T00:00:00.000Z"}
-            daySize={39}
-            disableScroll={false}
-            disabled={false}
-            displayFormat={[Function]}
-            enableOutsideDays={false}
-            firstDayOfWeek={null}
-            focused={false}
-            hideKeyboardShortcutsPanel={false}
-            horizontalMargin={0}
-            horizontalMonthPadding={13}
-            id="date"
-            initialVisibleMonth={null}
-            inputIconPosition="before"
-            isDayBlocked={[Function]}
-            isDayHighlighted={[Function]}
-            isOutsideRange={[Function]}
-            isRTL={false}
-            keepFocusOnInput={false}
-            keepOpenOnDateSelect={false}
-            monthFormat="MMMM YYYY"
-            navNext={null}
-            navPrev={null}
-            noBorder={false}
-            numberOfMonths={1}
-            onClose={[Function]}
-            onDateChange={[Function]}
-            onFocusChange={[Function]}
-            onNextMonthClick={[Function]}
-            onPrevMonthClick={[Function]}
-            openDirection="down"
-            orientation="horizontal"
-            phrases={
-              Object {
-                "calendarLabel": "Calendar",
-                "chooseAvailableDate": [Function],
-                "clearDate": "Clear Date",
-                "closeDatePicker": "Close",
-                "dateIsSelected": [Function],
-                "dateIsUnavailable": [Function],
-                "enterKey": "Enter key",
-                "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Name"
+      type="text"
+      value=""
+    />
+    <br />
+    <input
+      onChange={[Function]}
+      placeholder="Main Dojo"
+      type="text"
+      value=""
+    />
+    <br />
+    <input
+      input="number"
+      onChange={[Function]}
+      placeholder="Grade Level"
+      value={10}
+    />
+    <br />
+    <label>
+      Grading date:
+      <SingleDatePicker
+        anchorDirection="left"
+        customCloseIcon={null}
+        customInputIcon={null}
+        date={"1970-01-01T00:00:00.000Z"}
+        daySize={39}
+        disabled={false}
+        displayFormat={[Function]}
+        enableOutsideDays={false}
+        firstDayOfWeek={null}
+        focused={false}
+        hideKeyboardShortcutsPanel={false}
+        horizontalMargin={0}
+        id="date"
+        initialVisibleMonth={null}
+        isDayBlocked={[Function]}
+        isDayHighlighted={[Function]}
+        isOutsideRange={[Function]}
+        isRTL={false}
+        keepOpenOnDateSelect={false}
+        monthFormat="MMMM YYYY"
+        navNext={null}
+        navPrev={null}
+        numberOfMonths={1}
+        onClose={[Function]}
+        onDateChange={[Function]}
+        onFocusChange={[Function]}
+        onNextMonthClick={[Function]}
+        onPrevMonthClick={[Function]}
+        orientation="horizontal"
+        phrases={
+          Object {
+            "chooseAvailableDate": [Function],
+            "clearDate": "Clear Date",
+            "closeDatePicker": "Close",
+            "dateIsUnavailable": [Function],
+            "enterKey": "Enter key",
+            "escape": "Escape key",
+            "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
+            "homeEnd": "Home and end keys",
+            "jumpToNextMonth": "Move forward to switch to the next month",
+            "jumpToPrevMonth": "Move backward to switch to the previous month",
+            "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                "keyboardShortcuts": "Keyboard Shortcuts",
-                "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
-                "pageUpPageDown": "page up and page down keys",
-                "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                "upArrowDownArrow": "up and down arrow keys",
-              }
-            }
-            placeholder="Date"
-            readOnly={false}
-            regular={false}
-            renderCalendarInfo={null}
-            renderDayContents={null}
-            renderMonthElement={null}
-            renderMonthText={null}
-            reopenPickerOnClearDate={false}
-            required={false}
-            screenReaderInputMessage=""
-            showClearDate={false}
-            showDefaultInputIcon={false}
-            small={false}
-            verticalHeight={null}
-            verticalSpacing={22}
-            weekDayFormat="dd"
-            withFullScreenPortal={false}
-            withPortal={false}
-          />
-          <br />
-          <textarea
-            onChange={[Function]}
-            placeholder="Add notes"
-            value=""
-          />
-          <button>
-            Add record
-          </button>
-        </form>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      "",
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <input
-              autoFocus={true}
-              onChange={[Function]}
-              placeholder="Name"
-              type="text"
-              value=""
-            />,
-            <br />,
-            <input
-              onChange={[Function]}
-              placeholder="Main Dojo"
-              type="text"
-              value=""
-            />,
-            <br />,
-            <input
-              input="number"
-              onChange={[Function]}
-              placeholder="Grade Level"
-              value={10}
-            />,
-            <br />,
-            <withStyles(SingleDatePicker)
-              anchorDirection="left"
-              appendToBody={false}
-              block={false}
-              calendarInfoPosition="bottom"
-              customCloseIcon={null}
-              customInputIcon={null}
-              date={"1970-01-01T00:00:00.000Z"}
-              daySize={39}
-              disableScroll={false}
-              disabled={false}
-              displayFormat={[Function]}
-              enableOutsideDays={false}
-              firstDayOfWeek={null}
-              focused={false}
-              hideKeyboardShortcutsPanel={false}
-              horizontalMargin={0}
-              horizontalMonthPadding={13}
-              id="date"
-              initialVisibleMonth={null}
-              inputIconPosition="before"
-              isDayBlocked={[Function]}
-              isDayHighlighted={[Function]}
-              isOutsideRange={[Function]}
-              isRTL={false}
-              keepFocusOnInput={false}
-              keepOpenOnDateSelect={false}
-              monthFormat="MMMM YYYY"
-              navNext={null}
-              navPrev={null}
-              noBorder={false}
-              numberOfMonths={1}
-              onClose={[Function]}
-              onDateChange={[Function]}
-              onFocusChange={[Function]}
-              onNextMonthClick={[Function]}
-              onPrevMonthClick={[Function]}
-              openDirection="down"
-              orientation="horizontal"
-              phrases={
-                Object {
-                  "calendarLabel": "Calendar",
-                  "chooseAvailableDate": [Function],
-                  "clearDate": "Clear Date",
-                  "closeDatePicker": "Close",
-                  "dateIsSelected": [Function],
-                  "dateIsUnavailable": [Function],
-                  "enterKey": "Enter key",
-                  "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                  "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                  "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                  "keyboardShortcuts": "Keyboard Shortcuts",
-                  "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
-                  "pageUpPageDown": "page up and page down keys",
-                  "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                  "upArrowDownArrow": "up and down arrow keys",
-                }
-              }
-              placeholder="Date"
-              readOnly={false}
-              regular={false}
-              renderCalendarInfo={null}
-              renderDayContents={null}
-              renderMonthElement={null}
-              renderMonthText={null}
-              reopenPickerOnClearDate={false}
-              required={false}
-              screenReaderInputMessage=""
-              showClearDate={false}
-              showDefaultInputIcon={false}
-              small={false}
-              verticalHeight={null}
-              verticalSpacing={22}
-              weekDayFormat="dd"
-              withFullScreenPortal={false}
-              withPortal={false}
-            />,
-            <br />,
-            <textarea
-              onChange={[Function]}
-              placeholder="Add notes"
-              value=""
-            />,
-            <button>
-              Add record
-            </button>,
-          ],
-          "onSubmit": [Function],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "autoFocus": true,
-              "onChange": [Function],
-              "placeholder": "Name",
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "onChange": [Function],
-              "placeholder": "Main Dojo",
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "input": "number",
-              "onChange": [Function],
-              "placeholder": "Grade Level",
-              "value": 10,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "anchorDirection": "left",
-              "appendToBody": false,
-              "block": false,
-              "calendarInfoPosition": "bottom",
-              "customCloseIcon": null,
-              "customInputIcon": null,
-              "date": "1970-01-01T00:00:00.000Z",
-              "dayAriaLabelFormat": undefined,
-              "daySize": 39,
-              "disableScroll": false,
-              "disabled": false,
-              "displayFormat": [Function],
-              "enableOutsideDays": false,
-              "firstDayOfWeek": null,
-              "focused": false,
-              "hideKeyboardShortcutsPanel": false,
-              "horizontalMargin": 0,
-              "horizontalMonthPadding": 13,
-              "id": "date",
-              "initialVisibleMonth": null,
-              "inputIconPosition": "before",
-              "isDayBlocked": [Function],
-              "isDayHighlighted": [Function],
-              "isOutsideRange": [Function],
-              "isRTL": false,
-              "keepFocusOnInput": false,
-              "keepOpenOnDateSelect": false,
-              "monthFormat": "MMMM YYYY",
-              "navNext": null,
-              "navPrev": null,
-              "noBorder": false,
-              "numberOfMonths": 1,
-              "onClose": [Function],
-              "onDateChange": [Function],
-              "onFocusChange": [Function],
-              "onNextMonthClick": [Function],
-              "onPrevMonthClick": [Function],
-              "openDirection": "down",
-              "orientation": "horizontal",
-              "phrases": Object {
-                "calendarLabel": "Calendar",
-                "chooseAvailableDate": [Function],
-                "clearDate": "Clear Date",
-                "closeDatePicker": "Close",
-                "dateIsSelected": [Function],
-                "dateIsUnavailable": [Function],
-                "enterKey": "Enter key",
-                "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                "keyboardShortcuts": "Keyboard Shortcuts",
-                "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
-                "pageUpPageDown": "page up and page down keys",
-                "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                "upArrowDownArrow": "up and down arrow keys",
-              },
-              "placeholder": "Date",
-              "readOnly": false,
-              "regular": false,
-              "renderCalendarDay": undefined,
-              "renderCalendarInfo": null,
-              "renderDayContents": null,
-              "renderMonthElement": null,
-              "renderMonthText": null,
-              "reopenPickerOnClearDate": false,
-              "required": false,
-              "screenReaderInputMessage": "",
-              "showClearDate": false,
-              "showDefaultInputIcon": false,
-              "small": false,
-              "transitionDuration": undefined,
-              "verticalHeight": null,
-              "verticalSpacing": 22,
-              "weekDayFormat": "dd",
-              "withFullScreenPortal": false,
-              "withPortal": false,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "onChange": [Function],
-              "placeholder": "Add notes",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "textarea",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Add record",
-            },
-            "ref": null,
-            "rendered": "Add record",
-            "type": "button",
-          },
-        ],
-        "type": "form",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          "",
-          <form
-            onSubmit={[Function]}
-          >
-            <input
-              autoFocus={true}
-              onChange={[Function]}
-              placeholder="Name"
-              type="text"
-              value=""
-            />
-            <br />
-            <input
-              onChange={[Function]}
-              placeholder="Main Dojo"
-              type="text"
-              value=""
-            />
-            <br />
-            <input
-              input="number"
-              onChange={[Function]}
-              placeholder="Grade Level"
-              value={10}
-            />
-            <br />
-            <withStyles(SingleDatePicker)
-              anchorDirection="left"
-              appendToBody={false}
-              block={false}
-              calendarInfoPosition="bottom"
-              customCloseIcon={null}
-              customInputIcon={null}
-              date={"1970-01-01T00:00:00.000Z"}
-              daySize={39}
-              disableScroll={false}
-              disabled={false}
-              displayFormat={[Function]}
-              enableOutsideDays={false}
-              firstDayOfWeek={null}
-              focused={false}
-              hideKeyboardShortcutsPanel={false}
-              horizontalMargin={0}
-              horizontalMonthPadding={13}
-              id="date"
-              initialVisibleMonth={null}
-              inputIconPosition="before"
-              isDayBlocked={[Function]}
-              isDayHighlighted={[Function]}
-              isOutsideRange={[Function]}
-              isRTL={false}
-              keepFocusOnInput={false}
-              keepOpenOnDateSelect={false}
-              monthFormat="MMMM YYYY"
-              navNext={null}
-              navPrev={null}
-              noBorder={false}
-              numberOfMonths={1}
-              onClose={[Function]}
-              onDateChange={[Function]}
-              onFocusChange={[Function]}
-              onNextMonthClick={[Function]}
-              onPrevMonthClick={[Function]}
-              openDirection="down"
-              orientation="horizontal"
-              phrases={
-                Object {
-                  "calendarLabel": "Calendar",
-                  "chooseAvailableDate": [Function],
-                  "clearDate": "Clear Date",
-                  "closeDatePicker": "Close",
-                  "dateIsSelected": [Function],
-                  "dateIsUnavailable": [Function],
-                  "enterKey": "Enter key",
-                  "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                  "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                  "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                  "keyboardShortcuts": "Keyboard Shortcuts",
-                  "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
-                  "pageUpPageDown": "page up and page down keys",
-                  "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                  "upArrowDownArrow": "up and down arrow keys",
-                }
-              }
-              placeholder="Date"
-              readOnly={false}
-              regular={false}
-              renderCalendarInfo={null}
-              renderDayContents={null}
-              renderMonthElement={null}
-              renderMonthText={null}
-              reopenPickerOnClearDate={false}
-              required={false}
-              screenReaderInputMessage=""
-              showClearDate={false}
-              showDefaultInputIcon={false}
-              small={false}
-              verticalHeight={null}
-              verticalSpacing={22}
-              weekDayFormat="dd"
-              withFullScreenPortal={false}
-              withPortal={false}
-            />
-            <br />
-            <textarea
-              onChange={[Function]}
-              placeholder="Add notes"
-              value=""
-            />
-            <button>
-              Add record
-            </button>
-          </form>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        "",
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <input
-                autoFocus={true}
-                onChange={[Function]}
-                placeholder="Name"
-                type="text"
-                value=""
-              />,
-              <br />,
-              <input
-                onChange={[Function]}
-                placeholder="Main Dojo"
-                type="text"
-                value=""
-              />,
-              <br />,
-              <input
-                input="number"
-                onChange={[Function]}
-                placeholder="Grade Level"
-                value={10}
-              />,
-              <br />,
-              <withStyles(SingleDatePicker)
-                anchorDirection="left"
-                appendToBody={false}
-                block={false}
-                calendarInfoPosition="bottom"
-                customCloseIcon={null}
-                customInputIcon={null}
-                date={"1970-01-01T00:00:00.000Z"}
-                daySize={39}
-                disableScroll={false}
-                disabled={false}
-                displayFormat={[Function]}
-                enableOutsideDays={false}
-                firstDayOfWeek={null}
-                focused={false}
-                hideKeyboardShortcutsPanel={false}
-                horizontalMargin={0}
-                horizontalMonthPadding={13}
-                id="date"
-                initialVisibleMonth={null}
-                inputIconPosition="before"
-                isDayBlocked={[Function]}
-                isDayHighlighted={[Function]}
-                isOutsideRange={[Function]}
-                isRTL={false}
-                keepFocusOnInput={false}
-                keepOpenOnDateSelect={false}
-                monthFormat="MMMM YYYY"
-                navNext={null}
-                navPrev={null}
-                noBorder={false}
-                numberOfMonths={1}
-                onClose={[Function]}
-                onDateChange={[Function]}
-                onFocusChange={[Function]}
-                onNextMonthClick={[Function]}
-                onPrevMonthClick={[Function]}
-                openDirection="down"
-                orientation="horizontal"
-                phrases={
-                  Object {
-                    "calendarLabel": "Calendar",
-                    "chooseAvailableDate": [Function],
-                    "clearDate": "Clear Date",
-                    "closeDatePicker": "Close",
-                    "dateIsSelected": [Function],
-                    "dateIsUnavailable": [Function],
-                    "enterKey": "Enter key",
-                    "escape": "Escape key",
-                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                    "homeEnd": "Home and end keys",
-                    "jumpToNextMonth": "Move forward to switch to the next month.",
-                    "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                    "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                    "keyboardShortcuts": "Keyboard Shortcuts",
-                    "leftArrowRightArrow": "Right and left arrow keys",
-                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                    "moveFocusByOneMonth": "Switch months.",
-                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                    "openThisPanel": "Open this panel.",
-                    "pageUpPageDown": "page up and page down keys",
-                    "questionMark": "Question mark",
-                    "returnFocusToInput": "Return to the date input field.",
-                    "selectFocusedDate": "Select the date in focus.",
-                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                    "upArrowDownArrow": "up and down arrow keys",
-                  }
-                }
-                placeholder="Date"
-                readOnly={false}
-                regular={false}
-                renderCalendarInfo={null}
-                renderDayContents={null}
-                renderMonthElement={null}
-                renderMonthText={null}
-                reopenPickerOnClearDate={false}
-                required={false}
-                screenReaderInputMessage=""
-                showClearDate={false}
-                showDefaultInputIcon={false}
-                small={false}
-                verticalHeight={null}
-                verticalSpacing={22}
-                weekDayFormat="dd"
-                withFullScreenPortal={false}
-                withPortal={false}
-              />,
-              <br />,
-              <textarea
-                onChange={[Function]}
-                placeholder="Add notes"
-                value=""
-              />,
-              <button>
-                Add record
-              </button>,
-            ],
-            "onSubmit": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "autoFocus": true,
-                "onChange": [Function],
-                "placeholder": "Name",
-                "type": "text",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "onChange": [Function],
-                "placeholder": "Main Dojo",
-                "type": "text",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "input": "number",
-                "onChange": [Function],
-                "placeholder": "Grade Level",
-                "value": 10,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "anchorDirection": "left",
-                "appendToBody": false,
-                "block": false,
-                "calendarInfoPosition": "bottom",
-                "customCloseIcon": null,
-                "customInputIcon": null,
-                "date": "1970-01-01T00:00:00.000Z",
-                "dayAriaLabelFormat": undefined,
-                "daySize": 39,
-                "disableScroll": false,
-                "disabled": false,
-                "displayFormat": [Function],
-                "enableOutsideDays": false,
-                "firstDayOfWeek": null,
-                "focused": false,
-                "hideKeyboardShortcutsPanel": false,
-                "horizontalMargin": 0,
-                "horizontalMonthPadding": 13,
-                "id": "date",
-                "initialVisibleMonth": null,
-                "inputIconPosition": "before",
-                "isDayBlocked": [Function],
-                "isDayHighlighted": [Function],
-                "isOutsideRange": [Function],
-                "isRTL": false,
-                "keepFocusOnInput": false,
-                "keepOpenOnDateSelect": false,
-                "monthFormat": "MMMM YYYY",
-                "navNext": null,
-                "navPrev": null,
-                "noBorder": false,
-                "numberOfMonths": 1,
-                "onClose": [Function],
-                "onDateChange": [Function],
-                "onFocusChange": [Function],
-                "onNextMonthClick": [Function],
-                "onPrevMonthClick": [Function],
-                "openDirection": "down",
-                "orientation": "horizontal",
-                "phrases": Object {
-                  "calendarLabel": "Calendar",
-                  "chooseAvailableDate": [Function],
-                  "clearDate": "Clear Date",
-                  "closeDatePicker": "Close",
-                  "dateIsSelected": [Function],
-                  "dateIsUnavailable": [Function],
-                  "enterKey": "Enter key",
-                  "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                  "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                  "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                  "keyboardShortcuts": "Keyboard Shortcuts",
-                  "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
-                  "pageUpPageDown": "page up and page down keys",
-                  "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                  "upArrowDownArrow": "up and down arrow keys",
-                },
-                "placeholder": "Date",
-                "readOnly": false,
-                "regular": false,
-                "renderCalendarDay": undefined,
-                "renderCalendarInfo": null,
-                "renderDayContents": null,
-                "renderMonthElement": null,
-                "renderMonthText": null,
-                "reopenPickerOnClearDate": false,
-                "required": false,
-                "screenReaderInputMessage": "",
-                "showClearDate": false,
-                "showDefaultInputIcon": false,
-                "small": false,
-                "transitionDuration": undefined,
-                "verticalHeight": null,
-                "verticalSpacing": 22,
-                "weekDayFormat": "dd",
-                "withFullScreenPortal": false,
-                "withPortal": false,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "onChange": [Function],
-                "placeholder": "Add notes",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "textarea",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Add record",
-              },
-              "ref": null,
-              "rendered": "Add record",
-              "type": "button",
-            },
-          ],
-          "type": "form",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
-  },
-}
+            "keyboardShortcuts": "Keyboard Shortcuts",
+            "leftArrowRightArrow": "Right and left arrow keys",
+            "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+            "moveFocusByOneMonth": "Switch months",
+            "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+            "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+            "openThisPanel": "Open this panel",
+            "pageUpPageDown": "page up and page down keys",
+            "questionMark": "Question mark",
+            "returnFocusToInput": "Return to the date input field",
+            "selectFocusedDate": "Select the date in focus",
+            "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
+            "upArrowDownArrow": "up and down arrow keys",
+          }
+        }
+        placeholder="Date"
+        readOnly={false}
+        renderCalendarInfo={null}
+        renderDay={null}
+        renderMonth={null}
+        reopenPickerOnClearDate={false}
+        required={false}
+        screenReaderInputMessage=""
+        showClearDate={false}
+        showDefaultInputIcon={false}
+        withFullScreenPortal={false}
+        withPortal={false}
+      />
+    </label>
+    <br />
+    <textarea
+      onChange={[Function]}
+      placeholder="Add notes"
+      value=""
+    />
+    <button>
+      Add record
+    </button>
+  </form>
+</div>
 `;
 
 exports[`should render RecordForm with record data 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <RecordForm
-    record={
-      Object {
-        "gradeLevel": 3,
-        "gradingDate": 0,
-        "id": "1",
-        "mainDojo": "Keynsham",
-        "name": "Bill Jo",
-      }
-    }
-  />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        "",
-        <form
-          onSubmit={[Function]}
-        >
-          <input
-            autoFocus={true}
-            onChange={[Function]}
-            placeholder="Name"
-            type="text"
-            value="Bill Jo"
-          />
-          <br />
-          <input
-            onChange={[Function]}
-            placeholder="Main Dojo"
-            type="text"
-            value="Keynsham"
-          />
-          <br />
-          <input
-            input="number"
-            onChange={[Function]}
-            placeholder="Grade Level"
-            value={3}
-          />
-          <br />
-          <withStyles(SingleDatePicker)
-            anchorDirection="left"
-            appendToBody={false}
-            block={false}
-            calendarInfoPosition="bottom"
-            customCloseIcon={null}
-            customInputIcon={null}
-            date={"1970-01-01T00:00:00.000Z"}
-            daySize={39}
-            disableScroll={false}
-            disabled={false}
-            displayFormat={[Function]}
-            enableOutsideDays={false}
-            firstDayOfWeek={null}
-            focused={false}
-            hideKeyboardShortcutsPanel={false}
-            horizontalMargin={0}
-            horizontalMonthPadding={13}
-            id="date"
-            initialVisibleMonth={null}
-            inputIconPosition="before"
-            isDayBlocked={[Function]}
-            isDayHighlighted={[Function]}
-            isOutsideRange={[Function]}
-            isRTL={false}
-            keepFocusOnInput={false}
-            keepOpenOnDateSelect={false}
-            monthFormat="MMMM YYYY"
-            navNext={null}
-            navPrev={null}
-            noBorder={false}
-            numberOfMonths={1}
-            onClose={[Function]}
-            onDateChange={[Function]}
-            onFocusChange={[Function]}
-            onNextMonthClick={[Function]}
-            onPrevMonthClick={[Function]}
-            openDirection="down"
-            orientation="horizontal"
-            phrases={
-              Object {
-                "calendarLabel": "Calendar",
-                "chooseAvailableDate": [Function],
-                "clearDate": "Clear Date",
-                "closeDatePicker": "Close",
-                "dateIsSelected": [Function],
-                "dateIsUnavailable": [Function],
-                "enterKey": "Enter key",
-                "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Name"
+      type="text"
+      value="Bill Jo"
+    />
+    <br />
+    <input
+      onChange={[Function]}
+      placeholder="Main Dojo"
+      type="text"
+      value="Keynsham"
+    />
+    <br />
+    <input
+      input="number"
+      onChange={[Function]}
+      placeholder="Grade Level"
+      value={3}
+    />
+    <br />
+    <label>
+      Grading date:
+      <SingleDatePicker
+        anchorDirection="left"
+        customCloseIcon={null}
+        customInputIcon={null}
+        date={"1970-01-01T00:00:00.000Z"}
+        daySize={39}
+        disabled={false}
+        displayFormat={[Function]}
+        enableOutsideDays={false}
+        firstDayOfWeek={null}
+        focused={false}
+        hideKeyboardShortcutsPanel={false}
+        horizontalMargin={0}
+        id="date"
+        initialVisibleMonth={null}
+        isDayBlocked={[Function]}
+        isDayHighlighted={[Function]}
+        isOutsideRange={[Function]}
+        isRTL={false}
+        keepOpenOnDateSelect={false}
+        monthFormat="MMMM YYYY"
+        navNext={null}
+        navPrev={null}
+        numberOfMonths={1}
+        onClose={[Function]}
+        onDateChange={[Function]}
+        onFocusChange={[Function]}
+        onNextMonthClick={[Function]}
+        onPrevMonthClick={[Function]}
+        orientation="horizontal"
+        phrases={
+          Object {
+            "chooseAvailableDate": [Function],
+            "clearDate": "Clear Date",
+            "closeDatePicker": "Close",
+            "dateIsUnavailable": [Function],
+            "enterKey": "Enter key",
+            "escape": "Escape key",
+            "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
+            "homeEnd": "Home and end keys",
+            "jumpToNextMonth": "Move forward to switch to the next month",
+            "jumpToPrevMonth": "Move backward to switch to the previous month",
+            "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                "keyboardShortcuts": "Keyboard Shortcuts",
-                "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
-                "pageUpPageDown": "page up and page down keys",
-                "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                "upArrowDownArrow": "up and down arrow keys",
-              }
-            }
-            placeholder="Date"
-            readOnly={false}
-            regular={false}
-            renderCalendarInfo={null}
-            renderDayContents={null}
-            renderMonthElement={null}
-            renderMonthText={null}
-            reopenPickerOnClearDate={false}
-            required={false}
-            screenReaderInputMessage=""
-            showClearDate={false}
-            showDefaultInputIcon={false}
-            small={false}
-            verticalHeight={null}
-            verticalSpacing={22}
-            weekDayFormat="dd"
-            withFullScreenPortal={false}
-            withPortal={false}
-          />
-          <br />
-          <textarea
-            onChange={[Function]}
-            placeholder="Add notes"
-          />
-          <button>
-            Add record
-          </button>
-        </form>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      "",
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <input
-              autoFocus={true}
-              onChange={[Function]}
-              placeholder="Name"
-              type="text"
-              value="Bill Jo"
-            />,
-            <br />,
-            <input
-              onChange={[Function]}
-              placeholder="Main Dojo"
-              type="text"
-              value="Keynsham"
-            />,
-            <br />,
-            <input
-              input="number"
-              onChange={[Function]}
-              placeholder="Grade Level"
-              value={3}
-            />,
-            <br />,
-            <withStyles(SingleDatePicker)
-              anchorDirection="left"
-              appendToBody={false}
-              block={false}
-              calendarInfoPosition="bottom"
-              customCloseIcon={null}
-              customInputIcon={null}
-              date={"1970-01-01T00:00:00.000Z"}
-              daySize={39}
-              disableScroll={false}
-              disabled={false}
-              displayFormat={[Function]}
-              enableOutsideDays={false}
-              firstDayOfWeek={null}
-              focused={false}
-              hideKeyboardShortcutsPanel={false}
-              horizontalMargin={0}
-              horizontalMonthPadding={13}
-              id="date"
-              initialVisibleMonth={null}
-              inputIconPosition="before"
-              isDayBlocked={[Function]}
-              isDayHighlighted={[Function]}
-              isOutsideRange={[Function]}
-              isRTL={false}
-              keepFocusOnInput={false}
-              keepOpenOnDateSelect={false}
-              monthFormat="MMMM YYYY"
-              navNext={null}
-              navPrev={null}
-              noBorder={false}
-              numberOfMonths={1}
-              onClose={[Function]}
-              onDateChange={[Function]}
-              onFocusChange={[Function]}
-              onNextMonthClick={[Function]}
-              onPrevMonthClick={[Function]}
-              openDirection="down"
-              orientation="horizontal"
-              phrases={
-                Object {
-                  "calendarLabel": "Calendar",
-                  "chooseAvailableDate": [Function],
-                  "clearDate": "Clear Date",
-                  "closeDatePicker": "Close",
-                  "dateIsSelected": [Function],
-                  "dateIsUnavailable": [Function],
-                  "enterKey": "Enter key",
-                  "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                  "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                  "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                  "keyboardShortcuts": "Keyboard Shortcuts",
-                  "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
-                  "pageUpPageDown": "page up and page down keys",
-                  "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                  "upArrowDownArrow": "up and down arrow keys",
-                }
-              }
-              placeholder="Date"
-              readOnly={false}
-              regular={false}
-              renderCalendarInfo={null}
-              renderDayContents={null}
-              renderMonthElement={null}
-              renderMonthText={null}
-              reopenPickerOnClearDate={false}
-              required={false}
-              screenReaderInputMessage=""
-              showClearDate={false}
-              showDefaultInputIcon={false}
-              small={false}
-              verticalHeight={null}
-              verticalSpacing={22}
-              weekDayFormat="dd"
-              withFullScreenPortal={false}
-              withPortal={false}
-            />,
-            <br />,
-            <textarea
-              onChange={[Function]}
-              placeholder="Add notes"
-            />,
-            <button>
-              Add record
-            </button>,
-          ],
-          "onSubmit": [Function],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "autoFocus": true,
-              "onChange": [Function],
-              "placeholder": "Name",
-              "type": "text",
-              "value": "Bill Jo",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "onChange": [Function],
-              "placeholder": "Main Dojo",
-              "type": "text",
-              "value": "Keynsham",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "input": "number",
-              "onChange": [Function],
-              "placeholder": "Grade Level",
-              "value": 3,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "anchorDirection": "left",
-              "appendToBody": false,
-              "block": false,
-              "calendarInfoPosition": "bottom",
-              "customCloseIcon": null,
-              "customInputIcon": null,
-              "date": "1970-01-01T00:00:00.000Z",
-              "dayAriaLabelFormat": undefined,
-              "daySize": 39,
-              "disableScroll": false,
-              "disabled": false,
-              "displayFormat": [Function],
-              "enableOutsideDays": false,
-              "firstDayOfWeek": null,
-              "focused": false,
-              "hideKeyboardShortcutsPanel": false,
-              "horizontalMargin": 0,
-              "horizontalMonthPadding": 13,
-              "id": "date",
-              "initialVisibleMonth": null,
-              "inputIconPosition": "before",
-              "isDayBlocked": [Function],
-              "isDayHighlighted": [Function],
-              "isOutsideRange": [Function],
-              "isRTL": false,
-              "keepFocusOnInput": false,
-              "keepOpenOnDateSelect": false,
-              "monthFormat": "MMMM YYYY",
-              "navNext": null,
-              "navPrev": null,
-              "noBorder": false,
-              "numberOfMonths": 1,
-              "onClose": [Function],
-              "onDateChange": [Function],
-              "onFocusChange": [Function],
-              "onNextMonthClick": [Function],
-              "onPrevMonthClick": [Function],
-              "openDirection": "down",
-              "orientation": "horizontal",
-              "phrases": Object {
-                "calendarLabel": "Calendar",
-                "chooseAvailableDate": [Function],
-                "clearDate": "Clear Date",
-                "closeDatePicker": "Close",
-                "dateIsSelected": [Function],
-                "dateIsUnavailable": [Function],
-                "enterKey": "Enter key",
-                "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                "keyboardShortcuts": "Keyboard Shortcuts",
-                "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
-                "pageUpPageDown": "page up and page down keys",
-                "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                "upArrowDownArrow": "up and down arrow keys",
-              },
-              "placeholder": "Date",
-              "readOnly": false,
-              "regular": false,
-              "renderCalendarDay": undefined,
-              "renderCalendarInfo": null,
-              "renderDayContents": null,
-              "renderMonthElement": null,
-              "renderMonthText": null,
-              "reopenPickerOnClearDate": false,
-              "required": false,
-              "screenReaderInputMessage": "",
-              "showClearDate": false,
-              "showDefaultInputIcon": false,
-              "small": false,
-              "transitionDuration": undefined,
-              "verticalHeight": null,
-              "verticalSpacing": 22,
-              "weekDayFormat": "dd",
-              "withFullScreenPortal": false,
-              "withPortal": false,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "onChange": [Function],
-              "placeholder": "Add notes",
-              "value": undefined,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "textarea",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Add record",
-            },
-            "ref": null,
-            "rendered": "Add record",
-            "type": "button",
-          },
-        ],
-        "type": "form",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          "",
-          <form
-            onSubmit={[Function]}
-          >
-            <input
-              autoFocus={true}
-              onChange={[Function]}
-              placeholder="Name"
-              type="text"
-              value="Bill Jo"
-            />
-            <br />
-            <input
-              onChange={[Function]}
-              placeholder="Main Dojo"
-              type="text"
-              value="Keynsham"
-            />
-            <br />
-            <input
-              input="number"
-              onChange={[Function]}
-              placeholder="Grade Level"
-              value={3}
-            />
-            <br />
-            <withStyles(SingleDatePicker)
-              anchorDirection="left"
-              appendToBody={false}
-              block={false}
-              calendarInfoPosition="bottom"
-              customCloseIcon={null}
-              customInputIcon={null}
-              date={"1970-01-01T00:00:00.000Z"}
-              daySize={39}
-              disableScroll={false}
-              disabled={false}
-              displayFormat={[Function]}
-              enableOutsideDays={false}
-              firstDayOfWeek={null}
-              focused={false}
-              hideKeyboardShortcutsPanel={false}
-              horizontalMargin={0}
-              horizontalMonthPadding={13}
-              id="date"
-              initialVisibleMonth={null}
-              inputIconPosition="before"
-              isDayBlocked={[Function]}
-              isDayHighlighted={[Function]}
-              isOutsideRange={[Function]}
-              isRTL={false}
-              keepFocusOnInput={false}
-              keepOpenOnDateSelect={false}
-              monthFormat="MMMM YYYY"
-              navNext={null}
-              navPrev={null}
-              noBorder={false}
-              numberOfMonths={1}
-              onClose={[Function]}
-              onDateChange={[Function]}
-              onFocusChange={[Function]}
-              onNextMonthClick={[Function]}
-              onPrevMonthClick={[Function]}
-              openDirection="down"
-              orientation="horizontal"
-              phrases={
-                Object {
-                  "calendarLabel": "Calendar",
-                  "chooseAvailableDate": [Function],
-                  "clearDate": "Clear Date",
-                  "closeDatePicker": "Close",
-                  "dateIsSelected": [Function],
-                  "dateIsUnavailable": [Function],
-                  "enterKey": "Enter key",
-                  "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                  "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                  "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                  "keyboardShortcuts": "Keyboard Shortcuts",
-                  "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
-                  "pageUpPageDown": "page up and page down keys",
-                  "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                  "upArrowDownArrow": "up and down arrow keys",
-                }
-              }
-              placeholder="Date"
-              readOnly={false}
-              regular={false}
-              renderCalendarInfo={null}
-              renderDayContents={null}
-              renderMonthElement={null}
-              renderMonthText={null}
-              reopenPickerOnClearDate={false}
-              required={false}
-              screenReaderInputMessage=""
-              showClearDate={false}
-              showDefaultInputIcon={false}
-              small={false}
-              verticalHeight={null}
-              verticalSpacing={22}
-              weekDayFormat="dd"
-              withFullScreenPortal={false}
-              withPortal={false}
-            />
-            <br />
-            <textarea
-              onChange={[Function]}
-              placeholder="Add notes"
-            />
-            <button>
-              Add record
-            </button>
-          </form>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        "",
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <input
-                autoFocus={true}
-                onChange={[Function]}
-                placeholder="Name"
-                type="text"
-                value="Bill Jo"
-              />,
-              <br />,
-              <input
-                onChange={[Function]}
-                placeholder="Main Dojo"
-                type="text"
-                value="Keynsham"
-              />,
-              <br />,
-              <input
-                input="number"
-                onChange={[Function]}
-                placeholder="Grade Level"
-                value={3}
-              />,
-              <br />,
-              <withStyles(SingleDatePicker)
-                anchorDirection="left"
-                appendToBody={false}
-                block={false}
-                calendarInfoPosition="bottom"
-                customCloseIcon={null}
-                customInputIcon={null}
-                date={"1970-01-01T00:00:00.000Z"}
-                daySize={39}
-                disableScroll={false}
-                disabled={false}
-                displayFormat={[Function]}
-                enableOutsideDays={false}
-                firstDayOfWeek={null}
-                focused={false}
-                hideKeyboardShortcutsPanel={false}
-                horizontalMargin={0}
-                horizontalMonthPadding={13}
-                id="date"
-                initialVisibleMonth={null}
-                inputIconPosition="before"
-                isDayBlocked={[Function]}
-                isDayHighlighted={[Function]}
-                isOutsideRange={[Function]}
-                isRTL={false}
-                keepFocusOnInput={false}
-                keepOpenOnDateSelect={false}
-                monthFormat="MMMM YYYY"
-                navNext={null}
-                navPrev={null}
-                noBorder={false}
-                numberOfMonths={1}
-                onClose={[Function]}
-                onDateChange={[Function]}
-                onFocusChange={[Function]}
-                onNextMonthClick={[Function]}
-                onPrevMonthClick={[Function]}
-                openDirection="down"
-                orientation="horizontal"
-                phrases={
-                  Object {
-                    "calendarLabel": "Calendar",
-                    "chooseAvailableDate": [Function],
-                    "clearDate": "Clear Date",
-                    "closeDatePicker": "Close",
-                    "dateIsSelected": [Function],
-                    "dateIsUnavailable": [Function],
-                    "enterKey": "Enter key",
-                    "escape": "Escape key",
-                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                    "homeEnd": "Home and end keys",
-                    "jumpToNextMonth": "Move forward to switch to the next month.",
-                    "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                    "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                    "keyboardShortcuts": "Keyboard Shortcuts",
-                    "leftArrowRightArrow": "Right and left arrow keys",
-                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                    "moveFocusByOneMonth": "Switch months.",
-                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                    "openThisPanel": "Open this panel.",
-                    "pageUpPageDown": "page up and page down keys",
-                    "questionMark": "Question mark",
-                    "returnFocusToInput": "Return to the date input field.",
-                    "selectFocusedDate": "Select the date in focus.",
-                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                    "upArrowDownArrow": "up and down arrow keys",
-                  }
-                }
-                placeholder="Date"
-                readOnly={false}
-                regular={false}
-                renderCalendarInfo={null}
-                renderDayContents={null}
-                renderMonthElement={null}
-                renderMonthText={null}
-                reopenPickerOnClearDate={false}
-                required={false}
-                screenReaderInputMessage=""
-                showClearDate={false}
-                showDefaultInputIcon={false}
-                small={false}
-                verticalHeight={null}
-                verticalSpacing={22}
-                weekDayFormat="dd"
-                withFullScreenPortal={false}
-                withPortal={false}
-              />,
-              <br />,
-              <textarea
-                onChange={[Function]}
-                placeholder="Add notes"
-              />,
-              <button>
-                Add record
-              </button>,
-            ],
-            "onSubmit": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "autoFocus": true,
-                "onChange": [Function],
-                "placeholder": "Name",
-                "type": "text",
-                "value": "Bill Jo",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "onChange": [Function],
-                "placeholder": "Main Dojo",
-                "type": "text",
-                "value": "Keynsham",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "input": "number",
-                "onChange": [Function],
-                "placeholder": "Grade Level",
-                "value": 3,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "anchorDirection": "left",
-                "appendToBody": false,
-                "block": false,
-                "calendarInfoPosition": "bottom",
-                "customCloseIcon": null,
-                "customInputIcon": null,
-                "date": "1970-01-01T00:00:00.000Z",
-                "dayAriaLabelFormat": undefined,
-                "daySize": 39,
-                "disableScroll": false,
-                "disabled": false,
-                "displayFormat": [Function],
-                "enableOutsideDays": false,
-                "firstDayOfWeek": null,
-                "focused": false,
-                "hideKeyboardShortcutsPanel": false,
-                "horizontalMargin": 0,
-                "horizontalMonthPadding": 13,
-                "id": "date",
-                "initialVisibleMonth": null,
-                "inputIconPosition": "before",
-                "isDayBlocked": [Function],
-                "isDayHighlighted": [Function],
-                "isOutsideRange": [Function],
-                "isRTL": false,
-                "keepFocusOnInput": false,
-                "keepOpenOnDateSelect": false,
-                "monthFormat": "MMMM YYYY",
-                "navNext": null,
-                "navPrev": null,
-                "noBorder": false,
-                "numberOfMonths": 1,
-                "onClose": [Function],
-                "onDateChange": [Function],
-                "onFocusChange": [Function],
-                "onNextMonthClick": [Function],
-                "onPrevMonthClick": [Function],
-                "openDirection": "down",
-                "orientation": "horizontal",
-                "phrases": Object {
-                  "calendarLabel": "Calendar",
-                  "chooseAvailableDate": [Function],
-                  "clearDate": "Clear Date",
-                  "closeDatePicker": "Close",
-                  "dateIsSelected": [Function],
-                  "dateIsUnavailable": [Function],
-                  "enterKey": "Enter key",
-                  "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                  "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                  "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                  "keyboardShortcuts": "Keyboard Shortcuts",
-                  "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
-                  "pageUpPageDown": "page up and page down keys",
-                  "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                  "upArrowDownArrow": "up and down arrow keys",
-                },
-                "placeholder": "Date",
-                "readOnly": false,
-                "regular": false,
-                "renderCalendarDay": undefined,
-                "renderCalendarInfo": null,
-                "renderDayContents": null,
-                "renderMonthElement": null,
-                "renderMonthText": null,
-                "reopenPickerOnClearDate": false,
-                "required": false,
-                "screenReaderInputMessage": "",
-                "showClearDate": false,
-                "showDefaultInputIcon": false,
-                "small": false,
-                "transitionDuration": undefined,
-                "verticalHeight": null,
-                "verticalSpacing": 22,
-                "weekDayFormat": "dd",
-                "withFullScreenPortal": false,
-                "withPortal": false,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "onChange": [Function],
-                "placeholder": "Add notes",
-                "value": undefined,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "textarea",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Add record",
-              },
-              "ref": null,
-              "rendered": "Add record",
-              "type": "button",
-            },
-          ],
-          "type": "form",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
-  },
-}
+            "keyboardShortcuts": "Keyboard Shortcuts",
+            "leftArrowRightArrow": "Right and left arrow keys",
+            "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+            "moveFocusByOneMonth": "Switch months",
+            "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+            "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+            "openThisPanel": "Open this panel",
+            "pageUpPageDown": "page up and page down keys",
+            "questionMark": "Question mark",
+            "returnFocusToInput": "Return to the date input field",
+            "selectFocusedDate": "Select the date in focus",
+            "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
+            "upArrowDownArrow": "up and down arrow keys",
+          }
+        }
+        placeholder="Date"
+        readOnly={false}
+        renderCalendarInfo={null}
+        renderDay={null}
+        renderMonth={null}
+        reopenPickerOnClearDate={false}
+        required={false}
+        screenReaderInputMessage=""
+        showClearDate={false}
+        showDefaultInputIcon={false}
+        withFullScreenPortal={false}
+        withPortal={false}
+      />
+    </label>
+    <br />
+    <textarea
+      onChange={[Function]}
+      placeholder="Add notes"
+    />
+    <button>
+      Add record
+    </button>
+  </form>
+</div>
 `;
 
 exports[`should render error for invalid form submission 1`] = `
-ShallowWrapper {
-  Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <RecordForm />,
-  Symbol(enzyme.__renderer__): Object {
-    "batchedUpdates": [Function],
-    "getNode": [Function],
-    "render": [Function],
-    "simulateError": [Function],
-    "simulateEvent": [Function],
-    "unmount": [Function],
-  },
-  Symbol(enzyme.__node__): Object {
-    "instance": null,
-    "key": undefined,
-    "nodeType": "host",
-    "props": Object {
-      "children": Array [
-        <p>
-          Please provide Name, Main Dojo and Grade Level
-        </p>,
-        <form
-          onSubmit={[Function]}
-        >
-          <input
-            autoFocus={true}
-            onChange={[Function]}
-            placeholder="Name"
-            type="text"
-            value=""
-          />
-          <br />
-          <input
-            onChange={[Function]}
-            placeholder="Main Dojo"
-            type="text"
-            value=""
-          />
-          <br />
-          <input
-            input="number"
-            onChange={[Function]}
-            placeholder="Grade Level"
-            value={10}
-          />
-          <br />
-          <withStyles(SingleDatePicker)
-            anchorDirection="left"
-            appendToBody={false}
-            block={false}
-            calendarInfoPosition="bottom"
-            customCloseIcon={null}
-            customInputIcon={null}
-            date={"1970-01-01T00:00:00.000Z"}
-            daySize={39}
-            disableScroll={false}
-            disabled={false}
-            displayFormat={[Function]}
-            enableOutsideDays={false}
-            firstDayOfWeek={null}
-            focused={false}
-            hideKeyboardShortcutsPanel={false}
-            horizontalMargin={0}
-            horizontalMonthPadding={13}
-            id="date"
-            initialVisibleMonth={null}
-            inputIconPosition="before"
-            isDayBlocked={[Function]}
-            isDayHighlighted={[Function]}
-            isOutsideRange={[Function]}
-            isRTL={false}
-            keepFocusOnInput={false}
-            keepOpenOnDateSelect={false}
-            monthFormat="MMMM YYYY"
-            navNext={null}
-            navPrev={null}
-            noBorder={false}
-            numberOfMonths={1}
-            onClose={[Function]}
-            onDateChange={[Function]}
-            onFocusChange={[Function]}
-            onNextMonthClick={[Function]}
-            onPrevMonthClick={[Function]}
-            openDirection="down"
-            orientation="horizontal"
-            phrases={
-              Object {
-                "calendarLabel": "Calendar",
-                "chooseAvailableDate": [Function],
-                "clearDate": "Clear Date",
-                "closeDatePicker": "Close",
-                "dateIsSelected": [Function],
-                "dateIsUnavailable": [Function],
-                "enterKey": "Enter key",
-                "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
+<div>
+  <p>
+    Please provide Name, Main Dojo and Grade Level
+  </p>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      autoFocus={true}
+      onChange={[Function]}
+      placeholder="Name"
+      type="text"
+      value=""
+    />
+    <br />
+    <input
+      onChange={[Function]}
+      placeholder="Main Dojo"
+      type="text"
+      value=""
+    />
+    <br />
+    <input
+      input="number"
+      onChange={[Function]}
+      placeholder="Grade Level"
+      value={10}
+    />
+    <br />
+    <label>
+      Grading date:
+      <SingleDatePicker
+        anchorDirection="left"
+        customCloseIcon={null}
+        customInputIcon={null}
+        date={"1970-01-01T00:00:00.000Z"}
+        daySize={39}
+        disabled={false}
+        displayFormat={[Function]}
+        enableOutsideDays={false}
+        firstDayOfWeek={null}
+        focused={false}
+        hideKeyboardShortcutsPanel={false}
+        horizontalMargin={0}
+        id="date"
+        initialVisibleMonth={null}
+        isDayBlocked={[Function]}
+        isDayHighlighted={[Function]}
+        isOutsideRange={[Function]}
+        isRTL={false}
+        keepOpenOnDateSelect={false}
+        monthFormat="MMMM YYYY"
+        navNext={null}
+        navPrev={null}
+        numberOfMonths={1}
+        onClose={[Function]}
+        onDateChange={[Function]}
+        onFocusChange={[Function]}
+        onNextMonthClick={[Function]}
+        onPrevMonthClick={[Function]}
+        orientation="horizontal"
+        phrases={
+          Object {
+            "chooseAvailableDate": [Function],
+            "clearDate": "Clear Date",
+            "closeDatePicker": "Close",
+            "dateIsUnavailable": [Function],
+            "enterKey": "Enter key",
+            "escape": "Escape key",
+            "hideKeyboardShortcutsPanel": "Close the shortcuts panel",
+            "homeEnd": "Home and end keys",
+            "jumpToNextMonth": "Move forward to switch to the next month",
+            "jumpToPrevMonth": "Move backward to switch to the previous month",
+            "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
   select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                "keyboardShortcuts": "Keyboard Shortcuts",
-                "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
-                "pageUpPageDown": "page up and page down keys",
-                "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                "upArrowDownArrow": "up and down arrow keys",
-              }
-            }
-            placeholder="Date"
-            readOnly={false}
-            regular={false}
-            renderCalendarInfo={null}
-            renderDayContents={null}
-            renderMonthElement={null}
-            renderMonthText={null}
-            reopenPickerOnClearDate={false}
-            required={false}
-            screenReaderInputMessage=""
-            showClearDate={false}
-            showDefaultInputIcon={false}
-            small={false}
-            verticalHeight={null}
-            verticalSpacing={22}
-            weekDayFormat="dd"
-            withFullScreenPortal={false}
-            withPortal={false}
-          />
-          <br />
-          <textarea
-            onChange={[Function]}
-            placeholder="Add notes"
-            value=""
-          />
-          <button>
-            Add record
-          </button>
-        </form>,
-      ],
-    },
-    "ref": null,
-    "rendered": Array [
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": "Please provide Name, Main Dojo and Grade Level",
-        },
-        "ref": null,
-        "rendered": "Please provide Name, Main Dojo and Grade Level",
-        "type": "p",
-      },
-      Object {
-        "instance": null,
-        "key": undefined,
-        "nodeType": "host",
-        "props": Object {
-          "children": Array [
-            <input
-              autoFocus={true}
-              onChange={[Function]}
-              placeholder="Name"
-              type="text"
-              value=""
-            />,
-            <br />,
-            <input
-              onChange={[Function]}
-              placeholder="Main Dojo"
-              type="text"
-              value=""
-            />,
-            <br />,
-            <input
-              input="number"
-              onChange={[Function]}
-              placeholder="Grade Level"
-              value={10}
-            />,
-            <br />,
-            <withStyles(SingleDatePicker)
-              anchorDirection="left"
-              appendToBody={false}
-              block={false}
-              calendarInfoPosition="bottom"
-              customCloseIcon={null}
-              customInputIcon={null}
-              date={"1970-01-01T00:00:00.000Z"}
-              daySize={39}
-              disableScroll={false}
-              disabled={false}
-              displayFormat={[Function]}
-              enableOutsideDays={false}
-              firstDayOfWeek={null}
-              focused={false}
-              hideKeyboardShortcutsPanel={false}
-              horizontalMargin={0}
-              horizontalMonthPadding={13}
-              id="date"
-              initialVisibleMonth={null}
-              inputIconPosition="before"
-              isDayBlocked={[Function]}
-              isDayHighlighted={[Function]}
-              isOutsideRange={[Function]}
-              isRTL={false}
-              keepFocusOnInput={false}
-              keepOpenOnDateSelect={false}
-              monthFormat="MMMM YYYY"
-              navNext={null}
-              navPrev={null}
-              noBorder={false}
-              numberOfMonths={1}
-              onClose={[Function]}
-              onDateChange={[Function]}
-              onFocusChange={[Function]}
-              onNextMonthClick={[Function]}
-              onPrevMonthClick={[Function]}
-              openDirection="down"
-              orientation="horizontal"
-              phrases={
-                Object {
-                  "calendarLabel": "Calendar",
-                  "chooseAvailableDate": [Function],
-                  "clearDate": "Clear Date",
-                  "closeDatePicker": "Close",
-                  "dateIsSelected": [Function],
-                  "dateIsUnavailable": [Function],
-                  "enterKey": "Enter key",
-                  "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                  "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                  "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                  "keyboardShortcuts": "Keyboard Shortcuts",
-                  "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
-                  "pageUpPageDown": "page up and page down keys",
-                  "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                  "upArrowDownArrow": "up and down arrow keys",
-                }
-              }
-              placeholder="Date"
-              readOnly={false}
-              regular={false}
-              renderCalendarInfo={null}
-              renderDayContents={null}
-              renderMonthElement={null}
-              renderMonthText={null}
-              reopenPickerOnClearDate={false}
-              required={false}
-              screenReaderInputMessage=""
-              showClearDate={false}
-              showDefaultInputIcon={false}
-              small={false}
-              verticalHeight={null}
-              verticalSpacing={22}
-              weekDayFormat="dd"
-              withFullScreenPortal={false}
-              withPortal={false}
-            />,
-            <br />,
-            <textarea
-              onChange={[Function]}
-              placeholder="Add notes"
-              value=""
-            />,
-            <button>
-              Add record
-            </button>,
-          ],
-          "onSubmit": [Function],
-        },
-        "ref": null,
-        "rendered": Array [
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "autoFocus": true,
-              "onChange": [Function],
-              "placeholder": "Name",
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "onChange": [Function],
-              "placeholder": "Main Dojo",
-              "type": "text",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "input": "number",
-              "onChange": [Function],
-              "placeholder": "Grade Level",
-              "value": 10,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "input",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "class",
-            "props": Object {
-              "anchorDirection": "left",
-              "appendToBody": false,
-              "block": false,
-              "calendarInfoPosition": "bottom",
-              "customCloseIcon": null,
-              "customInputIcon": null,
-              "date": "1970-01-01T00:00:00.000Z",
-              "dayAriaLabelFormat": undefined,
-              "daySize": 39,
-              "disableScroll": false,
-              "disabled": false,
-              "displayFormat": [Function],
-              "enableOutsideDays": false,
-              "firstDayOfWeek": null,
-              "focused": false,
-              "hideKeyboardShortcutsPanel": false,
-              "horizontalMargin": 0,
-              "horizontalMonthPadding": 13,
-              "id": "date",
-              "initialVisibleMonth": null,
-              "inputIconPosition": "before",
-              "isDayBlocked": [Function],
-              "isDayHighlighted": [Function],
-              "isOutsideRange": [Function],
-              "isRTL": false,
-              "keepFocusOnInput": false,
-              "keepOpenOnDateSelect": false,
-              "monthFormat": "MMMM YYYY",
-              "navNext": null,
-              "navPrev": null,
-              "noBorder": false,
-              "numberOfMonths": 1,
-              "onClose": [Function],
-              "onDateChange": [Function],
-              "onFocusChange": [Function],
-              "onNextMonthClick": [Function],
-              "onPrevMonthClick": [Function],
-              "openDirection": "down",
-              "orientation": "horizontal",
-              "phrases": Object {
-                "calendarLabel": "Calendar",
-                "chooseAvailableDate": [Function],
-                "clearDate": "Clear Date",
-                "closeDatePicker": "Close",
-                "dateIsSelected": [Function],
-                "dateIsUnavailable": [Function],
-                "enterKey": "Enter key",
-                "escape": "Escape key",
-                "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                "homeEnd": "Home and end keys",
-                "jumpToNextMonth": "Move forward to switch to the next month.",
-                "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                "keyboardShortcuts": "Keyboard Shortcuts",
-                "leftArrowRightArrow": "Right and left arrow keys",
-                "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                "moveFocusByOneMonth": "Switch months.",
-                "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                "openThisPanel": "Open this panel.",
-                "pageUpPageDown": "page up and page down keys",
-                "questionMark": "Question mark",
-                "returnFocusToInput": "Return to the date input field.",
-                "selectFocusedDate": "Select the date in focus.",
-                "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                "upArrowDownArrow": "up and down arrow keys",
-              },
-              "placeholder": "Date",
-              "readOnly": false,
-              "regular": false,
-              "renderCalendarDay": undefined,
-              "renderCalendarInfo": null,
-              "renderDayContents": null,
-              "renderMonthElement": null,
-              "renderMonthText": null,
-              "reopenPickerOnClearDate": false,
-              "required": false,
-              "screenReaderInputMessage": "",
-              "showClearDate": false,
-              "showDefaultInputIcon": false,
-              "small": false,
-              "transitionDuration": undefined,
-              "verticalHeight": null,
-              "verticalSpacing": 22,
-              "weekDayFormat": "dd",
-              "withFullScreenPortal": false,
-              "withPortal": false,
-            },
-            "ref": null,
-            "rendered": null,
-            "type": [Function],
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {},
-            "ref": null,
-            "rendered": null,
-            "type": "br",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "onChange": [Function],
-              "placeholder": "Add notes",
-              "value": "",
-            },
-            "ref": null,
-            "rendered": null,
-            "type": "textarea",
-          },
-          Object {
-            "instance": null,
-            "key": undefined,
-            "nodeType": "host",
-            "props": Object {
-              "children": "Add record",
-            },
-            "ref": null,
-            "rendered": "Add record",
-            "type": "button",
-          },
-        ],
-        "type": "form",
-      },
-    ],
-    "type": "div",
-  },
-  Symbol(enzyme.__nodes__): Array [
-    Object {
-      "instance": null,
-      "key": undefined,
-      "nodeType": "host",
-      "props": Object {
-        "children": Array [
-          <p>
-            Please provide Name, Main Dojo and Grade Level
-          </p>,
-          <form
-            onSubmit={[Function]}
-          >
-            <input
-              autoFocus={true}
-              onChange={[Function]}
-              placeholder="Name"
-              type="text"
-              value=""
-            />
-            <br />
-            <input
-              onChange={[Function]}
-              placeholder="Main Dojo"
-              type="text"
-              value=""
-            />
-            <br />
-            <input
-              input="number"
-              onChange={[Function]}
-              placeholder="Grade Level"
-              value={10}
-            />
-            <br />
-            <withStyles(SingleDatePicker)
-              anchorDirection="left"
-              appendToBody={false}
-              block={false}
-              calendarInfoPosition="bottom"
-              customCloseIcon={null}
-              customInputIcon={null}
-              date={"1970-01-01T00:00:00.000Z"}
-              daySize={39}
-              disableScroll={false}
-              disabled={false}
-              displayFormat={[Function]}
-              enableOutsideDays={false}
-              firstDayOfWeek={null}
-              focused={false}
-              hideKeyboardShortcutsPanel={false}
-              horizontalMargin={0}
-              horizontalMonthPadding={13}
-              id="date"
-              initialVisibleMonth={null}
-              inputIconPosition="before"
-              isDayBlocked={[Function]}
-              isDayHighlighted={[Function]}
-              isOutsideRange={[Function]}
-              isRTL={false}
-              keepFocusOnInput={false}
-              keepOpenOnDateSelect={false}
-              monthFormat="MMMM YYYY"
-              navNext={null}
-              navPrev={null}
-              noBorder={false}
-              numberOfMonths={1}
-              onClose={[Function]}
-              onDateChange={[Function]}
-              onFocusChange={[Function]}
-              onNextMonthClick={[Function]}
-              onPrevMonthClick={[Function]}
-              openDirection="down"
-              orientation="horizontal"
-              phrases={
-                Object {
-                  "calendarLabel": "Calendar",
-                  "chooseAvailableDate": [Function],
-                  "clearDate": "Clear Date",
-                  "closeDatePicker": "Close",
-                  "dateIsSelected": [Function],
-                  "dateIsUnavailable": [Function],
-                  "enterKey": "Enter key",
-                  "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                  "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                  "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                  "keyboardShortcuts": "Keyboard Shortcuts",
-                  "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
-                  "pageUpPageDown": "page up and page down keys",
-                  "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                  "upArrowDownArrow": "up and down arrow keys",
-                }
-              }
-              placeholder="Date"
-              readOnly={false}
-              regular={false}
-              renderCalendarInfo={null}
-              renderDayContents={null}
-              renderMonthElement={null}
-              renderMonthText={null}
-              reopenPickerOnClearDate={false}
-              required={false}
-              screenReaderInputMessage=""
-              showClearDate={false}
-              showDefaultInputIcon={false}
-              small={false}
-              verticalHeight={null}
-              verticalSpacing={22}
-              weekDayFormat="dd"
-              withFullScreenPortal={false}
-              withPortal={false}
-            />
-            <br />
-            <textarea
-              onChange={[Function]}
-              placeholder="Add notes"
-              value=""
-            />
-            <button>
-              Add record
-            </button>
-          </form>,
-        ],
-      },
-      "ref": null,
-      "rendered": Array [
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": "Please provide Name, Main Dojo and Grade Level",
-          },
-          "ref": null,
-          "rendered": "Please provide Name, Main Dojo and Grade Level",
-          "type": "p",
-        },
-        Object {
-          "instance": null,
-          "key": undefined,
-          "nodeType": "host",
-          "props": Object {
-            "children": Array [
-              <input
-                autoFocus={true}
-                onChange={[Function]}
-                placeholder="Name"
-                type="text"
-                value=""
-              />,
-              <br />,
-              <input
-                onChange={[Function]}
-                placeholder="Main Dojo"
-                type="text"
-                value=""
-              />,
-              <br />,
-              <input
-                input="number"
-                onChange={[Function]}
-                placeholder="Grade Level"
-                value={10}
-              />,
-              <br />,
-              <withStyles(SingleDatePicker)
-                anchorDirection="left"
-                appendToBody={false}
-                block={false}
-                calendarInfoPosition="bottom"
-                customCloseIcon={null}
-                customInputIcon={null}
-                date={"1970-01-01T00:00:00.000Z"}
-                daySize={39}
-                disableScroll={false}
-                disabled={false}
-                displayFormat={[Function]}
-                enableOutsideDays={false}
-                firstDayOfWeek={null}
-                focused={false}
-                hideKeyboardShortcutsPanel={false}
-                horizontalMargin={0}
-                horizontalMonthPadding={13}
-                id="date"
-                initialVisibleMonth={null}
-                inputIconPosition="before"
-                isDayBlocked={[Function]}
-                isDayHighlighted={[Function]}
-                isOutsideRange={[Function]}
-                isRTL={false}
-                keepFocusOnInput={false}
-                keepOpenOnDateSelect={false}
-                monthFormat="MMMM YYYY"
-                navNext={null}
-                navPrev={null}
-                noBorder={false}
-                numberOfMonths={1}
-                onClose={[Function]}
-                onDateChange={[Function]}
-                onFocusChange={[Function]}
-                onNextMonthClick={[Function]}
-                onPrevMonthClick={[Function]}
-                openDirection="down"
-                orientation="horizontal"
-                phrases={
-                  Object {
-                    "calendarLabel": "Calendar",
-                    "chooseAvailableDate": [Function],
-                    "clearDate": "Clear Date",
-                    "closeDatePicker": "Close",
-                    "dateIsSelected": [Function],
-                    "dateIsUnavailable": [Function],
-                    "enterKey": "Enter key",
-                    "escape": "Escape key",
-                    "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                    "homeEnd": "Home and end keys",
-                    "jumpToNextMonth": "Move forward to switch to the next month.",
-                    "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                    "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                    "keyboardShortcuts": "Keyboard Shortcuts",
-                    "leftArrowRightArrow": "Right and left arrow keys",
-                    "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                    "moveFocusByOneMonth": "Switch months.",
-                    "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                    "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                    "openThisPanel": "Open this panel.",
-                    "pageUpPageDown": "page up and page down keys",
-                    "questionMark": "Question mark",
-                    "returnFocusToInput": "Return to the date input field.",
-                    "selectFocusedDate": "Select the date in focus.",
-                    "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                    "upArrowDownArrow": "up and down arrow keys",
-                  }
-                }
-                placeholder="Date"
-                readOnly={false}
-                regular={false}
-                renderCalendarInfo={null}
-                renderDayContents={null}
-                renderMonthElement={null}
-                renderMonthText={null}
-                reopenPickerOnClearDate={false}
-                required={false}
-                screenReaderInputMessage=""
-                showClearDate={false}
-                showDefaultInputIcon={false}
-                small={false}
-                verticalHeight={null}
-                verticalSpacing={22}
-                weekDayFormat="dd"
-                withFullScreenPortal={false}
-                withPortal={false}
-              />,
-              <br />,
-              <textarea
-                onChange={[Function]}
-                placeholder="Add notes"
-                value=""
-              />,
-              <button>
-                Add record
-              </button>,
-            ],
-            "onSubmit": [Function],
-          },
-          "ref": null,
-          "rendered": Array [
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "autoFocus": true,
-                "onChange": [Function],
-                "placeholder": "Name",
-                "type": "text",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "onChange": [Function],
-                "placeholder": "Main Dojo",
-                "type": "text",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "input": "number",
-                "onChange": [Function],
-                "placeholder": "Grade Level",
-                "value": 10,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "input",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "class",
-              "props": Object {
-                "anchorDirection": "left",
-                "appendToBody": false,
-                "block": false,
-                "calendarInfoPosition": "bottom",
-                "customCloseIcon": null,
-                "customInputIcon": null,
-                "date": "1970-01-01T00:00:00.000Z",
-                "dayAriaLabelFormat": undefined,
-                "daySize": 39,
-                "disableScroll": false,
-                "disabled": false,
-                "displayFormat": [Function],
-                "enableOutsideDays": false,
-                "firstDayOfWeek": null,
-                "focused": false,
-                "hideKeyboardShortcutsPanel": false,
-                "horizontalMargin": 0,
-                "horizontalMonthPadding": 13,
-                "id": "date",
-                "initialVisibleMonth": null,
-                "inputIconPosition": "before",
-                "isDayBlocked": [Function],
-                "isDayHighlighted": [Function],
-                "isOutsideRange": [Function],
-                "isRTL": false,
-                "keepFocusOnInput": false,
-                "keepOpenOnDateSelect": false,
-                "monthFormat": "MMMM YYYY",
-                "navNext": null,
-                "navPrev": null,
-                "noBorder": false,
-                "numberOfMonths": 1,
-                "onClose": [Function],
-                "onDateChange": [Function],
-                "onFocusChange": [Function],
-                "onNextMonthClick": [Function],
-                "onPrevMonthClick": [Function],
-                "openDirection": "down",
-                "orientation": "horizontal",
-                "phrases": Object {
-                  "calendarLabel": "Calendar",
-                  "chooseAvailableDate": [Function],
-                  "clearDate": "Clear Date",
-                  "closeDatePicker": "Close",
-                  "dateIsSelected": [Function],
-                  "dateIsUnavailable": [Function],
-                  "enterKey": "Enter key",
-                  "escape": "Escape key",
-                  "hideKeyboardShortcutsPanel": "Close the shortcuts panel.",
-                  "homeEnd": "Home and end keys",
-                  "jumpToNextMonth": "Move forward to switch to the next month.",
-                  "jumpToPrevMonth": "Move backward to switch to the previous month.",
-                  "keyboardNavigationInstructions": "Press the down arrow key to interact with the calendar and
-  select a date. Press the question mark key to get the keyboard shortcuts for changing dates.",
-                  "keyboardShortcuts": "Keyboard Shortcuts",
-                  "leftArrowRightArrow": "Right and left arrow keys",
-                  "moveFocusByOneDay": "Move backward (left) and forward (right) by one day.",
-                  "moveFocusByOneMonth": "Switch months.",
-                  "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week.",
-                  "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week.",
-                  "openThisPanel": "Open this panel.",
-                  "pageUpPageDown": "page up and page down keys",
-                  "questionMark": "Question mark",
-                  "returnFocusToInput": "Return to the date input field.",
-                  "selectFocusedDate": "Select the date in focus.",
-                  "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel.",
-                  "upArrowDownArrow": "up and down arrow keys",
-                },
-                "placeholder": "Date",
-                "readOnly": false,
-                "regular": false,
-                "renderCalendarDay": undefined,
-                "renderCalendarInfo": null,
-                "renderDayContents": null,
-                "renderMonthElement": null,
-                "renderMonthText": null,
-                "reopenPickerOnClearDate": false,
-                "required": false,
-                "screenReaderInputMessage": "",
-                "showClearDate": false,
-                "showDefaultInputIcon": false,
-                "small": false,
-                "transitionDuration": undefined,
-                "verticalHeight": null,
-                "verticalSpacing": 22,
-                "weekDayFormat": "dd",
-                "withFullScreenPortal": false,
-                "withPortal": false,
-              },
-              "ref": null,
-              "rendered": null,
-              "type": [Function],
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "onChange": [Function],
-                "placeholder": "Add notes",
-                "value": "",
-              },
-              "ref": null,
-              "rendered": null,
-              "type": "textarea",
-            },
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {
-                "children": "Add record",
-              },
-              "ref": null,
-              "rendered": "Add record",
-              "type": "button",
-            },
-          ],
-          "type": "form",
-        },
-      ],
-      "type": "div",
-    },
-  ],
-  Symbol(enzyme.__options__): Object {
-    "adapter": ReactSixteenAdapter {
-      "options": Object {
-        "enableComponentDidUpdateOnSetState": true,
-        "lifecycles": Object {
-          "componentDidUpdate": Object {
-            "onSetState": true,
-          },
-          "getDerivedStateFromProps": true,
-          "getSnapshotBeforeUpdate": true,
-          "setState": Object {
-            "skipsComponentDidUpdateOnNullish": true,
-          },
-        },
-      },
-    },
-    "attachTo": undefined,
-    "hydrateIn": undefined,
-  },
-}
+            "keyboardShortcuts": "Keyboard Shortcuts",
+            "leftArrowRightArrow": "Right and left arrow keys",
+            "moveFocusByOneDay": "Move backward (left) and forward (right) by one day",
+            "moveFocusByOneMonth": "Switch months",
+            "moveFocusByOneWeek": "Move backward (up) and forward (down) by one week",
+            "moveFocustoStartAndEndOfWeek": "Go to the first or last day of a week",
+            "openThisPanel": "Open this panel",
+            "pageUpPageDown": "page up and page down keys",
+            "questionMark": "Question mark",
+            "returnFocusToInput": "Return to the date input field",
+            "selectFocusedDate": "Select the date in focus",
+            "showKeyboardShortcutsPanel": "Open the keyboard shortcuts panel",
+            "upArrowDownArrow": "up and down arrow keys",
+          }
+        }
+        placeholder="Date"
+        readOnly={false}
+        renderCalendarInfo={null}
+        renderDay={null}
+        renderMonth={null}
+        reopenPickerOnClearDate={false}
+        required={false}
+        screenReaderInputMessage=""
+        showClearDate={false}
+        showDefaultInputIcon={false}
+        withFullScreenPortal={false}
+        withPortal={false}
+      />
+    </label>
+    <br />
+    <textarea
+      onChange={[Function]}
+      placeholder="Add notes"
+      value=""
+    />
+    <button>
+      Add record
+    </button>
+  </form>
+</div>
 `;

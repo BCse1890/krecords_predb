@@ -3,27 +3,39 @@ import database from '../firebase/firebase';
 import moment from 'moment';
 
 // ADD RECORD
-export const addRecord = ( {name='', address='', contactTel='', email='', relativeName='',
-    relativeContactTel='', mainDojo='', dateJoinClub=0, gradeLevel=10, 
-    gradingDate=undefined, classesSinceGrading=0
-    } = {} 
-) => ({
+export const addRecord = (record) => ({
     type: 'ADD_RECORD',
-    record: {
-        id: uuid(),
-        name,
-        mainDojo,
-        gradeLevel,
-        gradingDate,
-        dateJoinClub,
-        address,
-        contactTel,
-        email,
-        relativeName,
-        relativeContactTel,
-        classesSinceGrading
-    }
-})
+    record
+});
+
+export const startAddRecord = (recordData = {}) => {
+    return (dispatch) => {
+        const {
+            name='', 
+            address='', 
+            contactTel='', 
+            email='', 
+            relativeName='',
+            relativeContactTel='', 
+            mainDojo='', 
+            dateJoinClub=0, 
+            gradeLevel=10, 
+            gradingDate=undefined, 
+            classesSinceGrading=0
+        } = recordData;
+        
+        const record = {name, mainDojo, gradeLevel, gradingDate, dateJoinClub, 
+            address, contactTel, email, relativeName, relativeContactTel, 
+            classesSinceGrading };
+
+        database.ref('records').push(record).then((ref) => {
+            dispatch(addRecord({
+                id: ref.key,
+                ...record
+            }));
+        });
+    };
+};
 
 /* 
 // ADD RECORD

@@ -1,11 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import RecordForm from './RecordForm';
-import { addRecord } from '../actions/records';
+import { startAddRecord } from '../actions/records';
 
 export class AddRecordPage extends React.Component {
     onSubmit = (record) => {
-        this.props.addRecord(record);
+        this.props.startAddRecord(record);
         this.props.history.push('/');
     };
     render() {
@@ -21,7 +21,7 @@ export class AddRecordPage extends React.Component {
 }
 
 const mapDispatchToProps = (dispatch) => ({
-        addRecord: (record) => dispatch(addRecord(record))
+    startAddRecord: (record) => dispatch(startAddRecord(record))
     });
 
 export default connect(undefined, mapDispatchToProps)(AddRecordPage);

@@ -64,4 +64,13 @@ test('does not edit record if id incorrect', () => {
     };
     const state = recordsReducer(records, action);
     expect(state).toEqual(records);
-})
+});
+
+test('should set records', () => {
+    const action = {
+        type: 'SET_RECORDS',
+        records: [records[1]]
+    };
+    const state = recordsReducer(records, action);
+    expect(state).toEqual([records[1]]);
+});

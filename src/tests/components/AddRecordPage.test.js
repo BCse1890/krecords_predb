@@ -6,12 +6,12 @@ import { RecordForm } from '../../components/RecordForm';
 import records from '../fixtures/records';
 
 // using spies below
-let addRecord, history, wrapper;
+let startAddRecord, history, wrapper;
 beforeEach(() => {
-    addRecord = jest.fn();
+    startAddRecord = jest.fn();
     history = { push: jest.fn() };
     wrapper = shallow(<AddRecordPage 
-        addRecord={addRecord} history={history} />);
+        startAddRecord={startAddRecord} history={history} />);
 });
 
 test('should render AddRecordPage correctly', () => {
@@ -29,5 +29,5 @@ test('should handle onSubmit', () => {
     //     onSubmit={onSubmit} history={history} />);
     wrapper.find('RecordForm').prop('onSubmit')(records[1]);
     expect(history.push).toHaveBeenLastCalledWith('/');
-    expect(addRecord).toHaveBeenLastCalledWith(records[1]);
+    expect(startAddRecord).toHaveBeenLastCalledWith(records[1]);
 });

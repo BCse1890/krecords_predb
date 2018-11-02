@@ -1,10 +1,23 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk';
-import { addRecord, editRecord, deleteRecord, startAddRecord } from '../../actions/records';
+import { addRecord, editRecord, deleteRecord, startAddRecord, setRecords, startSetRecords } from '../../actions/records';
 import records from '../fixtures/records';
-import database from '../../firebase/firebase.js';
+import database from '../../firebase/firebase';
+
 
 const createMockStore = configureMockStore([thunk]);
+
+beforeEach((done) => {
+    const recordsData = {};
+    records.forEach(({ id, name, address, contactTel, email, relativeName,
+        relativeContactTel, mainDojo, dateJoinClub, gradeLevel, gradingDate, 
+        classesSinceGrading }) => {
+            recordsData[id] = { id, name, address, contactTel, email, relativeName,
+                relativeContactTel, mainDojo, dateJoinClub, gradeLevel, gradingDate, 
+                classesSinceGrading };
+        });
+    database.ref('records').set(recordsData).then(() => done());
+})
 
 test('sets up delete record action object', () => {
     const action = deleteRecord({ id: '123abc' });
@@ -77,10 +90,10 @@ test('should add record to database and store', (done) => {
             }
         }); 
         
-        return database.ref(`records/${actions[0].record.id}`).once('value');   
-    }).then((snapshot) => {
-        expect(snapshot.val()).toEqual(recordData);
-        done();
+        database.ref(`records/${actions[0].record.id}`).once('value');
+        }).then((snapshot) => {
+            expect(snapshot.val()).toEqual(recordData);
+            done(); 
     });
 });
 
@@ -115,20 +128,26 @@ test('should add record with defaults to database and store', () => {
     }).then((snapshot) => {
         expect(snapshot.val()).toEqual(recordDefaults);
         done();
-    });
-    
+    });  
 });
 
-// test('sets up add record action object with default values', () => {
-//     const action = addRecord();
-//     expect(action).toEqual({
-//         type: 'ADD_RECORD',
-//         record: {
-//             name: '',
-//             mainDojo: '',
-//             gradeLevel: 10,
-//             gradingDate: 0,
-//             id: expect.any(String)
-//         }
-//     })
-// })
+
+test('should set up set record action object with data', () => {
+    const action = setRecords(records);
+    expect(action).toEqual({
+        type: 'SET_RECORDS',
+        records
+    });
+});
+
+test('should retrieve records from firebase', (done) => {
+    const store = createMockStore({});
+    store.dispatch(startSetRecords()).then(() => {
+        const actions = store.getActions();
+        expect(actions[0]).toEqual({
+            type: 'SET_RECORDS',
+            records
+        });
+        done();
+    })
+});

@@ -20,7 +20,7 @@ export const startAddRecord = (recordData = {}) => {
             mainDojo='', 
             dateJoinClub=0, 
             gradeLevel=10, 
-            gradingDate=undefined, 
+            gradingDate=0, 
             classesSinceGrading=0
         } = recordData;
         
@@ -87,3 +87,28 @@ export const editRecord = (id, updates) => ({
     id,
     updates
 });
+
+// SET_RECORDS
+export const setRecords = (records) => ({
+    type: 'SET_RECORDS', 
+    records
+});
+
+
+export const startSetRecords = () => {
+    return (dispatch) => {
+        return database.ref('records').once('value').then((snapshot) => {
+            const records = [];
+            
+            snapshot.forEach((childSnapshot) => {
+                records.push({
+                    id: childSnapshot.key,
+                    ...childSnapshot.val()
+                });
+            });
+
+            dispatch(setRecords(records));
+        });      
+    };
+};
+

@@ -24,6 +24,8 @@ const recordsReducer = (state = recordsReducerDefault, action) => {
                         return record;
                     }
                 });
+        case 'SET_RECORDS':
+                return action.records;
         default:
             return state;
     }

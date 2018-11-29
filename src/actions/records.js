@@ -28,7 +28,7 @@ export const startAddRecord = (recordData = {}) => {
             address, contactTel, email, relativeName, relativeContactTel, 
             classesSinceGrading };
 
-        database.ref('records').push(record).then((ref) => {
+        return database.ref('records').push(record).then((ref) => {
             dispatch(addRecord({
                 id: ref.key,
                 ...record

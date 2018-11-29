@@ -40,11 +40,12 @@ const jsx = (
   </Provider>
 );
 
-ReactDOM.render(<p>...loading...</p>, document.getElementById('app'));
+// ReactDOM.render(<p>...loading...</p>, document.getElementById('app'));
 
-store.dispatch(startSetRecords()).then(() => {
-  ReactDOM.render(jsx, document.getElementById('app'));
-});
-  
+// store.dispatch(startSetRecords()).then(() => {
+//   ReactDOM.render(jsx, document.getElementById('app'));
+// });
+
+ReactDOM.render(jsx, document.getElementById('app'));
 
 
